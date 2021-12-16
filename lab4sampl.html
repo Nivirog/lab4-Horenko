@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive-flex</title>
+    <style media="screen">
+        nav{
+            background-color:#363457; /*Задав колір для nav у HEX*/
+            height:75px; /*висота*/
+            font-family: sans-serif;
+            font-style: italic;
+        }
+        header{
+            background-color:#735290; /*задав колір фону для header*/
+            height:400px; /*задав висоту в 400рх*/
+            text-align: center;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+        section{
+            background-color: #C4A69D; /*задав колір для section*/
+            height:500px; /*висота 500рх*/
+            margin-top:75px; /*відступ зверху в 75 рх*/
+            margin-bottom:75px; /*відступ знизу в 75рх*/
+            margin-left:100px; /*відступ зліва в 100рх*/
+            margin-right:100px; /*відступ праворуч на 100рх*/
+            font-family: sans-serif;
+            font-style: italic;
+        }
+        .red{
+            height:40px; /*висота в 40 рх*/
+            background-color: #A4243B; /*колір для div*/
+            font-family: sans-serif;
+            font-style: italic;
+            text-align: center;
+            font-size: 150%;
+        }
+        footer{
+            height:100px; /*висота в 100рх*/
+            background-color: #4E4187; /*колір для footer*/
+            font-family: sans-serif;
+            font-style: italic;
+            font-size: 130%;
+            text-align: center;
+            padding-top: 50px;
+            color: #C4A69D;
+        }
+        .blue_paragraph{
+            height:200px; /*Висота висота 200рх*/
+            background-color:#465C69; /*Колір фону - хакі*/
+            margin-bottom:75px; /*Відступ знизу в 75рх*/
+            text-align: center;
+            font-size: 150%;
+        }
+        #flex-container{ /*Створив флекс контейнер для наших поранчевих боксів*/
+            display:flex; /*Відображення флекс*/
+            justify-content: space-between;; /*Розміщення контенту - початок*/
+        }
+        .green_box1{
+            height:200px; /*висота помаранчевого бокса виставив 225, бо в мене з 200рх не виходило, мало не вірний результат*/
+            width: 48%; /*Ширина 48% від батьківського елемента*/
+            background-color: #98A886; /*колір у HEX*/
+
+        }
+        .green_box2{
+            height:200px; /*висота помаранчевого бокса виставив 225, бо в мене з 200рх не виходило, мало не вірний результат*/
+            width: 48%; /*Ширина 48% від батьківського елемента*/ /*Відступ праворуч 25рх*/
+            background-color: #98A886; /*колір у HEX*/
+        }
+        .nav_bar{
+            padding: 15px;
+            font-size: 32px;
+        }
+        .back{
+            padding: 10px;
+            font-size: 32px;
+            float:right;
+        }
+        .div_header_upper{
+            font-size: 200%;
+            padding-top: 150px;
+        }
+        .div_header_main{
+            font-size: 250%;
+        }
+        .bigger{
+            font-size: 150%;
+        }
+        A:visited {
+            color: #A833B9;
+        }
+        A:hover{
+            color:#AA4586;
+        }
+        .div_under_orange{
+            font-size: 150%;
+            margin-left: 20%;
+        }
+        .div_under_orange2{
+            font-size: 150%;
+            margin-right: 15%;
+        }
+        @media (max-width: 1000px) {
+            .nav_bar{
+                font-size: 20px;
+            }
+            .back{
+                font-size: 20px;
+            }
+            .div_header_upper{
+                font-size: 150%;
+            }
+            .div_header_main{
+                font-size: 200%;
+            }
+            .blue_paragraph{
+                font-size: 115%;
+            }
+            .div_under_orange{
+                font-size: 125%;
+            }
+            .div_under_orange2{
+                font-size: 125%;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <span class="nav_bar">PC Portal</span>
+    <span class="back"><a href="index.html">Повернутись на головну сторінку</a></span>
+</nav> <!--Навігаційний заголовок-->
+<header>
+    <div class="div_header_upper">
+        Дизайн - одна з найголовніших частей продукту
+    </div>
+    <div class="div_header_main">
+        WorldWhille (c)
+    </div>
+</header> <!--Заголовок-->
+<section> <!--Головний вміст-->
+    <p class="blue_paragraph"><b class="bigger">Наше обладнення та софт:</b><br/>
+        <b>Camera:</b> FUJIFILM X-T4;
+        <b>Lens:</b> Fujifilm XC 35 mm f/2;
+        <b>Raster Soft:</b>Adobe Photoshop 2021;
+        <b>Vector Soft:</b>Figma;
+        <b>3D Animation:</b> Maya;
+        <b>3D Modeling:</b> 3Ds Max;</p> <!--За допомогою селектору класу до тегу <p> створив Жовтий параграф, як було вказано в завданні-->
+    <div id="flex-container"> <!--за допомогою <div> та ID селектору створив flex бокси-->
+        <div class="green_box1"><img src="F1.jpg." alt="My photo" width="100%" height="100%" /></div> <!--Перший бокс-->
+        <div class="green_box2"><img src="F2.jpg" alt="My photo" width="100%" height="100%" /></div> <!--Другий бокс-->
+    </div>
+    <div id="flex-container">
+        <div class="div_under_orange">Фото Семпл #1</div>
+        <div class="div_under_orange2">Фото Семпл#2</div>
+    </div>
+</section> <!--Кінець головного вмісту-->
+<div class="red">Бажаєте вдосконатили свій продукт?</div> <!--prefooter за допомогою селектору класу-->
+<footer>@Designed by Horenko Mykyta</footer> <!--Наш footer-->
+</body>
+</html>

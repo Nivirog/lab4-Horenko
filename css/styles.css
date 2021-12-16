@@ -1,0 +1,97 @@
+body{
+  font-family: sans-serif;
+  font-style: italic;
+  line-height: normal;
+}
+.ditto{
+  height: 180px;
+  width: 180px;
+  border-radius: 55px;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+.ditto2{
+  height: 180px;
+  width: 180px;
+  border-radius: 55px;
+  position: absolute;
+  top: -50px;
+  right: 20px;
+}
+.index_div_center{
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.center_div{
+  text-align: center;
+  padding: 20px;
+}
+hr{
+  border-style:none;
+  border-top-style: ridge;
+  border-color: #FFA69E;
+  border-width: 5px;
+  width: 10%;
+}
+.back{
+  background-color:#242423;
+}
+.exsansserif { font-family: Arial, Helvetica, sans-serif;}
+.Mainphoto{
+  width: 20%;
+  height: 20%;
+  cursor: cell;
+}
+.H2{
+    background-color: #333533;
+    width: 370px;
+}
+.H3{
+  background-color: #F5CB5C;
+  width: 280px;
+}
+
+#strongh4{
+  background-color: #FFA69E;
+  width: 130px;
+}
+A:visited {
+    color: #9a7f39;
+  }
+A:hover{
+  color:#A9DEF9;
+}
+.nits{
+border-style: groove;
+border-width: 10px;
+border-color:#453643;
+}
+.contact{
+  background-image: url(https://www.teahub.io/photos/full/96-961595_abstract-simple-background-hd.jpg);
+}
+@media (max-width: 1000px) {
+  .logo{
+    height: 60px;
+    width: 60px;
+  }
+.logo2{
+  height: 60px;
+  width: 60px;
+}
+body{
+  font-size: 14px;
+}
+.Mainphoto{
+  width: 300px;
+  height: 400px;
+}
+hr{
+  border-style:none;
+  border-top-style: dotted;
+  border-color: SandyBrown;
+  border-width: 10px;
+  width: 9%;
+}
+}
